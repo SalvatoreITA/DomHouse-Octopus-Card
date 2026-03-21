@@ -1,23 +1,37 @@
 
-# 🐙 DomHouse Octopus Suite per Home Assistant
+# 🐙 DomHouse Octopus Card per Home Assistant
+
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
+[![version](https://img.shields.io/badge/version-v1.0.0-blue.svg)]()
+[![maintainer](https://img.shields.io/badge/maintainer-Salvatore_Lentini_--_DomHouse.it-green.svg)](https://www.domhouse.it)
 
 Una suite elegante e intelligente di Custom Cards per Home Assistant dedicata ai clienti **Octopus Energy Italia**. Progettata con un design *Glassmorphism* moderno, ti permette di monitorare il tuo contratto e confrontare in tempo reale la tua tariffa attuale con le nuove offerte pubbliche sul sito ufficiale.
-
-![Version](https://img.shields.io/badge/version-1.0-blue.svg)
-![HACS](https://img.shields.io/badge/HACS-Custom-orange.svg)
 
 *(Inserisci qui lo screenshot della tua dashboard)*
 
 ## 🌟 Funzionalità Principali
 
-Questa suite include **due card distinte** in un unico pacchetto leggero:
+Questa suite include **due card distinte** in un unico pacchetto super ottimizzato (`domhouse-octopus-bundle.js`). Nel menu di Home Assistant appariranno come due schede separate e pronte all'uso.
 
-1. **⚖️ Confronto vs Sito Ufficiale (`domhouse-octopus-card`)**: 
-   Analizza in tempo reale il tuo prezzo dell'energia e i costi di commercializzazione (PCV/QVD) confrontandoli con le tariffe attuali sul sito Octopus. Ti fornisce un verdetto matematico e visivo (Verde = tieni la tua, Rosso = aggiorna subito) per farti risparmiare. Supporta sia il confronto tra tariffe Fisse che Variabili (Flex).
-2. **🐙 Il Mio Contratto (`domhouse-my-contract-card`)**: 
-   Una panoramica completa ed elegante della tua fornitura Luce e Gas. Mostra lo stato di attivazione, i costi attuali, i giorni rimanenti alla scadenza e la data dell'ultima lettura.
+### 🪄 Rendering Dinamico (Smart UI)
+Hai solo la fornitura Luce? O magari solo il Gas? Nessun problema! **Lascia vuoti i campi che non ti interessano e la card si ridimensionerà automaticamente**, nascondendo i riquadri inutili e centrando i contenuti. Niente più fastidiosi "N/A" o spazi vuoti sulla tua dashboard!
 
-Entrambe le card supportano l'**Editor Visuale (GUI)** nativo di Home Assistant: non dovrai scrivere una riga di codice YAML, potrai selezionare i tuoi sensori comodamente da un menu a tendina!
+### 1. ⚖️ Confronto vs Sito Ufficiale (`domhouse-octopus-card`)
+Analizza in tempo reale il tuo prezzo dell'energia e i costi di commercializzazione (PCV/QVD) confrontandoli con le tariffe pubbliche sul sito Octopus. 
+* Ti fornisce un **verdetto matematico e visivo** (Verde = tieni la tua tariffa, Rosso = aggiorna subito).
+* Supporta il confronto sia per chi ha tariffe **Fisse** che **Variabili (Flex)** tramite un comodo menu a tendina.
+* Mostra un riquadro extra dinamico per farti tenere d'occhio le altre tariffe disponibili.
+
+### 2. 🐙 Il Mio Contratto (`domhouse-my-contract-card`)
+Una panoramica completa ed elegante della tua fornitura. Mostra:
+* Lo stato di attivazione (con badge colorato "FORNITURA ATTIVA").
+* I costi attuali.
+* I giorni rimanenti alla scadenza (con colori di avviso: verde, giallo, rosso).
+* La data dell'ultima lettura.
+
+Entrambe le card supportano l'**Editor Visuale (GUI)** nativo di Home Assistant: non dovrai scrivere una riga di codice YAML!
+
+---
 
 ## 📥 Installazione tramite HACS (Consigliata)
 
@@ -28,18 +42,27 @@ Entrambe le card supportano l'**Editor Visuale (GUI)** nativo di Home Assistant:
 5. Clicca su **Add** (Aggiungi).
 6. Ora cerca "DomHouse Octopus Suite" in HACS, clicca su **Download** e poi ricarica la pagina del tuo browser.
 
-## ⚙️ Configurazione
+---
 
-Una volta installata, vai sulla tua plancia (Dashboard), clicca su "Modifica plancia" e poi su "Aggiungi scheda". Cerca:
+## ⚙️ Configurazione sulla Dashboard
+
+Una volta installata la risorsa, vai sulla tua plancia (Dashboard), clicca su "Modifica plancia" e poi su "Aggiungi scheda". Cerca:
 * **DomHouse Octopus Card - Confronto**
 * **DomHouse Octopus Card - Il Mio Contratto**
 
-Seleziona quella che desideri e usa il comodo menu grafico per assegnare i sensori Octopus forniti dall'integrazione ufficiale.
+Seleziona quella che desideri e usa l'editor grafico per assegnare i sensori forniti dall'integrazione ufficiale Octopus. **Ricorda: i campi lasciati vuoti spariranno magicamente dalla card!** Per nascondere il titolo principale, ti basterà svuotare il relativo campo di testo.
 
-### Opzioni Editor Grafico
-* **Titolo**: Puoi personalizzare il titolo o lasciarlo vuoto per nasconderlo.
-* **Tipo Tariffa (Solo Confronto)**: Scegli se attualmente possiedi una tariffa Fissa o Variabile (Flex) per far adattare automaticamente la card.
-* I sensori vuoti verranno gestiti in modo intelligente (es. se non hai il Gas, compila solo la sezione Luce).
+---
+
+## 🎁 Bonus: Blueprint Automazione (Notifiche Push & WhatsApp)
+Vuoi essere avvisato automaticamente sul cellulare quando i prezzi sul sito crollano sotto la tua tariffa?
+Nella cartella `blueprints` di questo repository troverai il file `domhouse_octopus_tracker.yaml`. 
+
+Importalo in Home Assistant per avere un'automazione infallibile che:
+1. Controlla silenziosamente i prezzi ogni volta che si aggiornano.
+2. Verifica matematicamente che ci sia un risparmio reale (inclusi i costi fissi).
+3. Ti invia una **Notifica Push sul cellulare**.
+4. Include un **pulsante rapido nella notifica** che apre direttamente **WhatsApp** con l'assistenza clienti Octopus e un messaggio preimpostato per chiedere l'aggiornamento della tariffa!
 
 ---
 
@@ -50,10 +73,5 @@ Seleziona quella che desideri e usa il comodo menu grafico per assegnare i senso
 4. Aggiungi una nuova risorsa: `/local/domhouse-octopus-bundle.js` impostando il tipo su **Modulo JavaScript**.
 5. Ricarica la pagina.
 
-## 🎁 Bonus: Blueprint per Automazione
-Vuoi essere avvisato automaticamente sul cellulare quando i prezzi sul sito crollano sotto la tua tariffa? 
-Usa il nostro Blueprint ufficiale per creare un'automazione infallibile:
-*(Qui puoi caricare il file YAML del blueprint nella tua repository e mettere il link per scaricarlo o importarlo)*
-
 ---
-*Powered by [DomHouse.it](https://www.domhouse.it)*
+*Progettato e sviluppato per la community. Powered by [DomHouse.it](https://www.domhouse.it)*
