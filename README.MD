@@ -7,7 +7,7 @@
 Una suite elegante e intelligente di Custom Cards per Home Assistant dedicata ai clienti **Octopus Energy Italia**. Progettata con un design *Glassmorphism* moderno, ti permette di monitorare il tuo contratto e confrontare in tempo reale la tua tariffa attuale con le nuove offerte pubbliche sul sito ufficiale.
 
 <div align="center">
-  <img src="foto.PNG" alt="Card Preview">
+  <img src="foto.png" alt="Card Preview">
 </div>
 
 ## ⚠️ Prerequisiti
