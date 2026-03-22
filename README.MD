@@ -11,7 +11,7 @@ Una suite elegante e intelligente di Custom Cards per Home Assistant dedicata ai
 
 ## 🌟 Funzionalità Principali
 
-Questa suite include **due card distinte** in un unico pacchetto super ottimizzato (`domhouse-octopus-bundle.js`). Nel menu di Home Assistant appariranno come due schede separate e pronte all'uso.
+Questa suite include **due card distinte** in un unico pacchetto super ottimizzato (`domhouse-octopus-card.js`). Nel menu di Home Assistant appariranno come due schede separate e pronte all'uso.
 
 ### 🪄 Rendering Dinamico (Smart UI)
 Hai solo la fornitura Luce? O magari solo il Gas? Nessun problema! **Lascia vuoti i campi che non ti interessano e la card si ridimensionerà automaticamente**, nascondendo i riquadri inutili e centrando i contenuti. Niente più fastidiosi "N/A" o spazi vuoti sulla tua dashboard!
@@ -37,10 +37,10 @@ Entrambe le card supportano l'**Editor Visuale (GUI)** nativo di Home Assistant:
 
 1. Apri **HACS** nel tuo Home Assistant.
 2. Clicca sui tre puntini in alto a destra e seleziona **Custom repositories** (Repository personalizzati).
-3. Incolla l'URL di questo repository GitHub: `https://github.com/TUO-NOME-UTENTE/domhouse-octopus-suite` *(Sostituisci con il tuo link reale)*.
+3. Incolla l'URL di questo repository GitHub: `https://github.com/SalvatoreITA/domhouse-octopus-card
 4. Come categoria (Category) scegli **Lovelace**.
 5. Clicca su **Add** (Aggiungi).
-6. Ora cerca "DomHouse Octopus Suite" in HACS, clicca su **Download** e poi ricarica la pagina del tuo browser.
+6. Ora cerca "DomHouse Octopus Card" in HACS, clicca su **Download** e poi ricarica la pagina del tuo browser.
 
 ---
 
