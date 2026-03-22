@@ -66,15 +66,15 @@ Una volta installata la risorsa, vai sulla tua plancia (Dashboard), clicca su "M
 
 Seleziona quella che desideri e usa l'editor grafico per assegnare i sensori forniti dall'integrazione ufficiale Octopus. **Ricorda: i campi lasciati vuoti spariranno magicamente dalla card!** Per nascondere il titolo principale, ti basterà svuotare il relativo campo di testo.
 
-## 🎁 Bonus: Blueprint Automazione (Notifiche Push )
-Vuoi essere avvisato automaticamente sul cellulare quando i prezzi sul sito crollano sotto la tua tariffa?
-Nella cartella `blueprints` di questo repository troverai il file `domhouse_octopus_tracker.yaml`. 
+## 🎁 Bonus: Blueprints per Automazioni (Notifiche Push & WhatsApp)
+Vuoi essere avvisato automaticamente sul cellulare quando i prezzi sul sito crollano sotto la tua tariffa o quando il tuo contratto sta per scadere?
+Nella cartella `blueprints` di questo repository troverai i file YAML pronti all'uso (Luce e Gas). 
 
-Importalo in Home Assistant per avere un'automazione infallibile che:
-1. Controlla silenziosamente i prezzi ogni volta che si aggiornano.
-2. Verifica matematicamente che ci sia un risparmio reale (inclusi i costi fissi).
-3. Ti invia una **Notifica Push sul cellulare**.
-4. Include un **pulsante rapido nella notifica** che apre direttamente **WhatsApp** con l'assistenza clienti Octopus e un messaggio preimpostato per chiedere l'aggiornamento della tariffa!
+Importali in Home Assistant per avere automazioni infallibili che:
+1. Controllano silenziosamente i prezzi ogni volta che si aggiornano.
+2. Verificano matematicamente che ci sia un risparmio reale (inclusi i costi fissi).
+3. Ti inviano una **Notifica Push sul cellulare**.
+4. Includono un **pulsante rapido nella notifica** che apre direttamente **WhatsApp** con l'assistenza clienti Octopus e un messaggio preimpostato per chiedere l'aggiornamento della tariffa!
 
 ## ☕ Supporta il Progetto
 
