@@ -10,10 +10,9 @@ Una suite elegante e intelligente di Custom Cards per Home Assistant dedicata ai
 
 ## ⚠️ Prerequisiti
 
-Per far funzionare questa suite e popolare correttamente i dati, **è strettamente necessario** avere installato e configurato l'integrazione personalizzata di Octopus Energy per l'Italia.
+Per far funzionare questa suite e popolare correttamente i dati, **è strettamente necessario** avere installato e configurato le seguenti integrazioni HACS:
 
-Puoi scaricarla e installarla tramite HACS da questa repository ufficiale:
-👉 **[HomeAssistant-OctopusEnergyIT](https://github.com/samuelebistoletti/HomeAssistant-OctopusEnergyIT)**
+* 👉 **[HomeAssistant-OctopusEnergyIT](https://github.com/samuelebistoletti/HomeAssistant-OctopusEnergyIT)**
 
 Assicurati che l'integrazione stia leggendo correttamente i dati del tuo contratto e le tariffe pubbliche prima di configurare le card!
 
