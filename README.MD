@@ -53,7 +53,7 @@ Entrambe le card supportano l'**Editor Visuale (GUI)** nativo di Home Assistant:
 1. Scarica il file `domhouse-octopus-bundle.js`.
 2. Copialo nella tua cartella `www` di Home Assistant (di solito `/config/www/`).
 3. Vai su **Impostazioni > Dashboard > Risorse**.
-4. Aggiungi una nuova risorsa: `/local/domhouse-octopus-bundle.js` impostando il tipo su **Modulo JavaScript**.
+4. Aggiungi una nuova risorsa: `/local/domhouse-octopus-card.js` impostando il tipo su **Modulo JavaScript**.
 5. Ricarica la pagina.
 
 ---
@@ -66,7 +66,14 @@ Una volta installata la risorsa, vai sulla tua plancia (Dashboard), clicca su "M
 
 Seleziona quella che desideri e usa l'editor grafico per assegnare i sensori forniti dall'integrazione ufficiale Octopus. **Ricorda: i campi lasciati vuoti spariranno magicamente dalla card!** Per nascondere il titolo principale, ti basterà svuotare il relativo campo di testo.
 
----
+## ☕ Supporta il Progetto
+
+Ogni piccolo supporto fa un'enorme differenza: mi aiuta a mantenere vivo l'entusiasmo e mi stimola a creare e condividere nuove soluzioni per la community. Grazie di cuore per il tuo aiuto! 🚀
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/salvatore_dh)
+
+## ❤️ Crediti
+Sviluppato da [Salvatore Lentini - DomHouse.it](https://www.domhouse.it)
 
 ## 🎁 Bonus: Blueprint Automazione (Notifiche Push & WhatsApp)
 Vuoi essere avvisato automaticamente sul cellulare quando i prezzi sul sito crollano sotto la tua tariffa?
