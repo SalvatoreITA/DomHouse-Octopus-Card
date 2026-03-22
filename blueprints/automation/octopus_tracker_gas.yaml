@@ -1,0 +1,128 @@
+blueprint:
+  name: 🐙 Octopus Tracker - GAS 🔥
+  description: >
+    Ricevi notifiche quando le tariffe GAS sul sito diventano più convenienti o quando il tuo contratto sta per scadere.
+
+    ⚙️ **Versione**: 1.0.0
+
+    👨‍💻 **Sviluppatore**: Salvatore Lentini
+
+    🌐 **Sito Web**: [www.domhouse.it](https://www.domhouse.it)
+  domain: automation
+  input:
+    enable_persistent:
+      name: 🔔 Notifica Persistente
+      default: true
+      selector:
+        boolean: {}
+    notify_service:
+      name: 📱 Servizio Notifica Push (Opzionale)
+      default: ""
+      selector:
+        text: {}
+    soglia_scadenza:
+      name: ⏱️ Preavviso Scadenza (Giorni)
+      default: 30
+      selector:
+        number:
+          min: 1
+          max: 90
+          step: 1
+          unit_of_measurement: "giorni"
+    gas_prezzo_tu:
+      name: Il tuo Prezzo Gas
+      selector:
+        entity:
+          domain: sensor
+    gas_qvd_tu:
+      name: La tua QVD Gas
+      selector:
+        entity:
+          domain: sensor
+    gas_giorni_scadenza:
+      name: Giorni Scadenza Gas
+      selector:
+        entity:
+          domain: sensor
+    gas_prezzo_sito:
+      name: Prezzo Sito Gas
+      selector:
+        entity:
+          domain: sensor
+    gas_qvd_sito:
+      name: QVD Sito Gas
+      selector:
+        entity:
+          domain: sensor
+
+variables:
+  enable_persistent: !input enable_persistent
+  notify_service: !input notify_service
+  p_sito: !input gas_prezzo_sito
+  qvd_sito: !input gas_qvd_sito
+  qvd_tu: !input gas_qvd_tu
+  giorni: !input gas_giorni_scadenza
+
+mode: single
+
+trigger:
+  - platform: numeric_state
+    entity_id: !input gas_prezzo_sito
+    below: !input gas_prezzo_tu
+    id: gas_drop
+  - platform: numeric_state
+    entity_id: !input gas_giorni_scadenza
+    below: !input soglia_scadenza
+    id: gas_scadenza
+
+action:
+  - choose:
+      - conditions:
+          - condition: trigger
+            id: gas_drop
+          - condition: template
+            value_template: "{{ states(qvd_sito)|float(999) <= states(qvd_tu)|float(999) }}"
+        sequence:
+          - choose:
+              - conditions: "{{ enable_persistent }}"
+                sequence:
+                  - service: persistent_notification.create
+                    data:
+                      title: "🐙 Octopus: Nuova Offerta Gas!"
+                      message: "La tariffa Gas sul sito è scesa a {{ states(p_sito) }} €/Smc. È PIÙ CONVENIENTE!"
+          - choose:
+              - conditions: "{{ notify_service != '' }}"
+                sequence:
+                  - service: "{{ notify_service }}"
+                    data:
+                      title: "🐙 Nuova Offerta Gas Octopus!"
+                      message: "La tariffa è scesa a {{ states(p_sito) }} €/Smc! Clicca sotto per scrivergli!"
+                      data:
+                        actions:
+                          - action: "URI"
+                            title: "💬 Scrivi ad Octopus"
+                            uri: "https://wa.me/390238582776?text=Ciao%20Octopus%21%20Vorrei%20aggiornare%20il%20contratto%20Gas."
+
+      - conditions:
+          - condition: trigger
+            id: gas_scadenza
+        sequence:
+          - choose:
+              - conditions: "{{ enable_persistent }}"
+                sequence:
+                  - service: persistent_notification.create
+                    data:
+                      title: "⚠️ Octopus: Scadenza Gas!"
+                      message: "Mancano meno di {{ states(giorni) }} giorni alla scadenza Gas."
+          - choose:
+              - conditions: "{{ notify_service != '' }}"
+                sequence:
+                  - service: "{{ notify_service }}"
+                    data:
+                      title: "⚠️ Scadenza Contratto Gas"
+                      message: "Mancano {{ states(giorni) }} giorni alla scadenza. Rinnova l'offerta!"
+                      data:
+                        actions:
+                          - action: "URI"
+                            title: "💬 Rinnova su WhatsApp"
+                            uri: "https://wa.me/390238582776?text=Ciao%21%20Voglio%20rinnovare%20il%20Gas."
