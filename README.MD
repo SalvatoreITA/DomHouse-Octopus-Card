@@ -66,7 +66,7 @@ Una volta installata la risorsa, vai sulla tua plancia (Dashboard), clicca su "M
 
 Seleziona quella che desideri e usa l'editor grafico per assegnare i sensori forniti dall'integrazione ufficiale Octopus. **Ricorda: i campi lasciati vuoti spariranno magicamente dalla card!** Per nascondere il titolo principale, ti basterà svuotare il relativo campo di testo.
 
-## 🎁 Bonus: Blueprint Automazione (Notifiche Push & WhatsApp)
+## 🎁 Bonus: Blueprint Automazione (Notifiche Push )
 Vuoi essere avvisato automaticamente sul cellulare quando i prezzi sul sito crollano sotto la tua tariffa?
 Nella cartella `blueprints` di questo repository troverai il file `domhouse_octopus_tracker.yaml`. 
 
