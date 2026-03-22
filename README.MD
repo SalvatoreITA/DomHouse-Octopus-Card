@@ -76,6 +76,12 @@ Importali in Home Assistant per avere automazioni infallibili che:
 3. Ti inviano una **Notifica Push sul cellulare**.
 4. Includono un **pulsante rapido nella notifica** che apre direttamente **WhatsApp** con l'assistenza clienti Octopus e un messaggio preimpostato per chiedere l'aggiornamento della tariffa!
 
+### 💡 Blueprint LUCE
+[![Importa Blueprint in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/SalvatoreITA/domhouse-octopus-card/main/blueprints/octopus_tracker_luce.yaml)
+
+### 🔥 Blueprint GAS
+[![Importa Blueprint in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/SalvatoreITA/domhouse-octopus-card/main/blueprints/octopus_tracker_gas.yaml)
+
 ## ☕ Supporta il Progetto
 
 Ogni piccolo supporto fa un'enorme differenza: mi aiuta a mantenere vivo l'entusiasmo e mi stimola a creare e condividere nuove soluzioni per la community. Grazie di cuore per il tuo aiuto! 🚀
