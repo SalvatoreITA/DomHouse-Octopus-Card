@@ -66,15 +66,6 @@ Una volta installata la risorsa, vai sulla tua plancia (Dashboard), clicca su "M
 
 Seleziona quella che desideri e usa l'editor grafico per assegnare i sensori forniti dall'integrazione ufficiale Octopus. **Ricorda: i campi lasciati vuoti spariranno magicamente dalla card!** Per nascondere il titolo principale, ti basterà svuotare il relativo campo di testo.
 
-## ☕ Supporta il Progetto
-
-Ogni piccolo supporto fa un'enorme differenza: mi aiuta a mantenere vivo l'entusiasmo e mi stimola a creare e condividere nuove soluzioni per la community. Grazie di cuore per il tuo aiuto! 🚀
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/salvatore_dh)
-
-## ❤️ Crediti
-Sviluppato da [Salvatore Lentini - DomHouse.it](https://www.domhouse.it)
-
 ## 🎁 Bonus: Blueprint Automazione (Notifiche Push & WhatsApp)
 Vuoi essere avvisato automaticamente sul cellulare quando i prezzi sul sito crollano sotto la tua tariffa?
 Nella cartella `blueprints` di questo repository troverai il file `domhouse_octopus_tracker.yaml`. 
@@ -85,7 +76,11 @@ Importalo in Home Assistant per avere un'automazione infallibile che:
 3. Ti invia una **Notifica Push sul cellulare**.
 4. Include un **pulsante rapido nella notifica** che apre direttamente **WhatsApp** con l'assistenza clienti Octopus e un messaggio preimpostato per chiedere l'aggiornamento della tariffa!
 
+## ☕ Supporta il Progetto
 
+Ogni piccolo supporto fa un'enorme differenza: mi aiuta a mantenere vivo l'entusiasmo e mi stimola a creare e condividere nuove soluzioni per la community. Grazie di cuore per il tuo aiuto! 🚀
 
----
-*Progettato e sviluppato per la community. Powered by [DomHouse.it](https://www.domhouse.it)*
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/salvatore_dh)
+
+## ❤️ Crediti
+Sviluppato da [Salvatore Lentini - DomHouse.it](https://www.domhouse.it)
