@@ -16,11 +16,10 @@ Per far funzionare questa suite e popolare correttamente i dati, **è strettamen
 
 ## 🌟 Funzionalità Principali
 
-Questa suite include **due card distinte** in un unico pacchetto super ottimizzato.
+* Questa suite include **due card distinte** in un unico pacchetto super ottimizzato.
 Nel menu di Home Assistant appariranno come due schede separate e pronte all'uso.
 
-### 👉 Rendering Dinamico (Smart UI)
-Hai solo la fornitura Luce? O magari solo il Gas? Nessun problema! **Lascia vuoti i campi che non ti interessano e la card si ridimensionerà automaticamente**, nascondendo i riquadri inutili e centrando i contenuti. Niente più fastidiosi "N/A" o spazi vuoti sulla tua dashboard!
+* Hai solo la fornitura Luce? O magari solo il Gas? Nessun problema! **Lascia vuoti i campi che non ti interessano e la card si ridimensionerà automaticamente**, nascondendo i riquadri inutili e centrando i contenuti. Niente più fastidiosi "N/A" o spazi vuoti sulla tua dashboard!
 
 ### 1. ⚖️ Confronto vs Sito Ufficiale
 Analizza in tempo reale il tuo prezzo dell'energia e i costi di commercializzazione (PCV/QVD) confrontandoli con le tariffe pubbliche sul sito Octopus. 
