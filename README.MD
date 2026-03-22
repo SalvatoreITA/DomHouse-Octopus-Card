@@ -14,8 +14,6 @@ Per far funzionare questa suite e popolare correttamente i dati, **è strettamen
 
 * **[HomeAssistant-OctopusEnergyIT](https://github.com/samuelebistoletti/HomeAssistant-OctopusEnergyIT)**
 
-Assicurati che l'integrazione stia leggendo correttamente i dati del tuo contratto e le tariffe pubbliche prima di configurare le card!
-
 ## 🌟 Funzionalità Principali
 
 Questa suite include **due card distinte** in un unico pacchetto super ottimizzato.
