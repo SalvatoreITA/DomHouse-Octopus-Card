@@ -15,6 +15,7 @@ Una suite elegante e intelligente di Custom Cards per Home Assistant dedicata ai
 Per far funzionare questa suite e popolare correttamente i dati, **è strettamente necessario** avere installato e configurato le seguenti integrazioni HACS:
 
 * **[OctopusEnergyIT](https://github.com/samuelebistoletti/HomeAssistant-OctopusEnergyIT)**
+* **[OctopusTariffeIT](https://github.com/SalvatoreITA/Octopus-Italy-Tariffe)**
 
 ## 🌟 Funzionalità Principali
 
