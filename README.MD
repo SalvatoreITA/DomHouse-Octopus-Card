@@ -53,7 +53,7 @@ Entrambe le card supportano l'**Editor Visuale (GUI)** nativo di Home Assistant:
 
 ### Installazione Manuale (Senza HACS)
 1. Scarica il file `domhouse-octopus-bundle.js`.
-2. Copialo nella tua cartella `www` di Home Assistant (di solito `/config/www/`).
+2. Copialo nella tua cartella `www` di Home Assistant (/config/www/).
 3. Vai su **Impostazioni > Dashboard > Risorse**.
 4. Aggiungi una nuova risorsa: `/local/domhouse-octopus-card.js` impostando il tipo su **Modulo JavaScript**.
 5. Ricarica la pagina.
