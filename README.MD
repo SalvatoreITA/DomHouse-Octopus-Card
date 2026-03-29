@@ -86,7 +86,7 @@ Importali in Home Assistant per avere automazioni infallibili che:
 [![Importa Blueprint in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/SalvatoreITA/domhouse-octopus-card/main/blueprints/octopus_tracker_gas.yaml)
 
 <div align="center">
-  <img src="notifiche.jpg" alt="Card Preview">
+  <img src="notifiche.jpg" alt="Card Preview" width="300">
 </div>
 
 
