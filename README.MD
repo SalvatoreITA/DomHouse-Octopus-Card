@@ -73,6 +73,10 @@ Seleziona quella che desideri e usa l'editor grafico per assegnare i sensori for
 Vuoi essere avvisato automaticamente sul cellulare quando i prezzi sul sito crollano sotto la tua tariffa o quando il tuo contratto sta per scadere?
 Nella cartella `blueprints` di questo repository troverai i file YAML pronti all'uso (Luce e Gas). 
 
+<div align="center">
+  <img src="notifiche.jpg" alt="Card Preview" width="300">
+</div>
+
 Importali in Home Assistant per avere automazioni infallibili che:
 1. Controllano silenziosamente i prezzi ogni volta che si aggiornano.
 2. Verificano matematicamente che ci sia un risparmio reale (inclusi i costi fissi).
@@ -84,11 +88,6 @@ Importali in Home Assistant per avere automazioni infallibili che:
 
 ### 🔥 Blueprint GAS
 [![Importa Blueprint in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/SalvatoreITA/domhouse-octopus-card/main/blueprints/octopus_tracker_gas.yaml)
-
-<div align="center">
-  <img src="notifiche.jpg" alt="Card Preview" width="300">
-</div>
-
 
 ## ☕ Supporta il Progetto
 
