@@ -69,7 +69,7 @@ Una volta installata la risorsa, vai sulla tua plancia (Dashboard), clicca su "M
 
 Seleziona quella che desideri e usa l'editor grafico per assegnare i sensori forniti dall'integrazione ufficiale Octopus. **Ricorda: i campi lasciati vuoti spariranno magicamente dalla card!** Per nascondere il titolo principale, ti basterà svuotare il relativo campo di testo.
 
-## 🎁 Bonus: Blueprints per Automazioni (Notifiche Push & WhatsApp)
+## 🎁 Bonus: Blueprints per Automazioni (Notifiche Push)
 Vuoi essere avvisato automaticamente sul cellulare quando i prezzi sul sito crollano sotto la tua tariffa o quando il tuo contratto sta per scadere?
 Nella cartella `blueprints` di questo repository troverai i file YAML pronti all'uso (Luce e Gas). 
 
