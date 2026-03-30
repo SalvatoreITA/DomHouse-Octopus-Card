@@ -1,4 +1,4 @@
-console.info("%c 🐙 DOMHOUSE OCTOPUS SUITE v1.0.0 (THEME SELECTOR) IS LOADED ", "color: white; background: #ff00ff; font-weight: bold; border: 1px solid white; padding: 2px 6px; border-radius: 4px;");
+console.info("%c 🐙 DOMHOUSE OCTOPUS SUITE v1.0.1 (THEME SELECTOR) IS LOADED ", "color: white; background: #ff00ff; font-weight: bold; border: 1px solid white; padding: 2px 6px; border-radius: 4px;");
 
 const LitElement = customElements.get("ha-panel-lovelace")
   ? Object.getPrototypeOf(customElements.get("ha-panel-lovelace"))
