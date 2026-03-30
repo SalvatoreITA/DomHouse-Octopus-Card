@@ -1,7 +1,7 @@
 # 🐙 DomHouse Octopus Card per Home Assistant
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
-[![version](https://img.shields.io/badge/version-v1.0.0-blue.svg)]()
+[![version](https://img.shields.io/badge/version-v1.0.1-blue.svg)]()
 [![maintainer](https://img.shields.io/badge/maintainer-Salvatore_Lentini_--_DomHouse.it-green.svg)](https://www.domhouse.it)
 
 Una suite elegante e intelligente di Custom Cards per Home Assistant dedicata ai clienti **Octopus Energy Italia**. Progettata con un design *Glassmorphism* moderno, ti permette di monitorare il tuo contratto e confrontare in tempo reale la tua tariffa attuale con le nuove offerte pubbliche sul sito ufficiale.
