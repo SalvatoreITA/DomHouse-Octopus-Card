@@ -7,7 +7,7 @@ blueprint:
 
     👨‍💻 **Sviluppatore**: Salvatore Lentini
 
-    🌐 **Sito Web**: [www.domhouse.it](https://www.domhouse.it)
+    🌐 **Sito Web**: [www.domhouse.it](https://domhouse.it/octopus-card-le-tariffe-octopus-energy-su-home-assistant/)
   domain: automation
   input:
     enable_persistent:
