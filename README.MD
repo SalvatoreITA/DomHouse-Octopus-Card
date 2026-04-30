@@ -10,7 +10,9 @@ Una suite elegante e intelligente di Custom Cards per Home Assistant dedicata ai
   <img src="foto.png" alt="Card Preview">
 </div>
 
-### 🎁 Se devi attivare un nuovo abbonamento con Octopus Energy puoi usare questo [link](https://octopusenergy.it/octo-friends/quiet-gaur-553): otterrai **uno sconto fino a 50 €**
+## 🎁 Sconto Octopus
+
+Se devi attivare un nuovo abbonamento con Octopus Energy puoi usare questo [link](https://octopusenergy.it/octo-friends/quiet-gaur-553): otterrai **uno sconto fino a 50 €**
 
 ## ⚠️ Prerequisiti
 
